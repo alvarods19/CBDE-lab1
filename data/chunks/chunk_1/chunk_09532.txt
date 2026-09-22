@@ -1,0 +1,1 @@
+heads instantly snapped to a rigid vertical position .
