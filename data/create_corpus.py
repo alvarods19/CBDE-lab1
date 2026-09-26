@@ -1,5 +1,5 @@
 """
-Genera data/chunks/corpus_10k.txt (1 frase per línia) a partir de BookCorpus (HuggingFace).
+Genera data/corpus_10k.txt (1 frase per línia) a partir de BookCorpus (HuggingFace).
 
 Font: rojagtap/bookcorpus (mirall en text pla, ~74M files, 1 frase per fila), en streaming
 per no descarregar el corpus sencer. No s'usa bookcorpus/bookcorpus perquè depèn d'un
@@ -20,7 +20,7 @@ from pathlib import Path
 import datasets
 from datasets import load_dataset
 
-DEFAULT_OUT = Path(__file__).resolve().parent / "chunks" / "corpus_10k.txt"
+DEFAULT_OUT = Path(__file__).resolve().parent / "corpus_10k.txt"
 DATASET = "rojagtap/bookcorpus"
 TOTAL = 10_000
 PAS = 100

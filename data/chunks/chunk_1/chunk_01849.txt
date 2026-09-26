@@ -1,1 +1,0 @@
-each individual sensor joins the network , identifies itself like , im the right elbow and reports motion .

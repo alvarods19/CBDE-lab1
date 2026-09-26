@@ -1,0 +1,18 @@
+# PostgreSQL 15 + extensión pgvector (disponible, no activada: la activa G1 con CREATE EXTENSION).
+# Misma versión mayor que postgres/docker-compose.yml (postgres:15): la única diferencia es la
+# extensión. Contenedor, puerto y volumen aparte, para no tocar la BD de P0–P2.
+services:
+  db:
+    image: pgvector/pgvector:pg15
+    restart: always
+    environment:
+      POSTGRES_USER: lab1
+      POSTGRES_PASSWORD: password123
+      POSTGRES_DB: lab_pgvector
+    ports:
+      - "5434:5432"
+    volumes:
+      - pgvector_data:/var/lib/postgresql/data
+
+volumes:
+  pgvector_data:

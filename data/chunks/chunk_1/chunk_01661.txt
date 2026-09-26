@@ -1,1 +1,0 @@
-from there he would work left to right , back to front .

@@ -1,1 +1,0 @@
-it would be nice to fetch a doctor as quickly as we fetched the ice last night .
